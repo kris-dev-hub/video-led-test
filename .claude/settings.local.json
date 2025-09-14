@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:www.waveshare.com)",
+      "Bash(pio build:*)",
+      "Bash(pio run:*)",
+      "Bash(pio device monitor:*)",
+      "Bash(timeout:*)",
+      "Bash(stty:*)",
+      "Read(//dev/**)",
+      "Bash(mkdir:*)",
+      "Bash(pio project init:*)",
+      "Read(//home/kris/projects/kris/code/electronics/rp2040zero-test2-llm/src/**)",
+      "Read(//home/kris/projects/kris/code/electronics/rp2040zero-test2-llm/**)",
+      "Bash(pio:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

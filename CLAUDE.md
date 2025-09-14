@@ -18,7 +18,7 @@
 #### Quick Test (Single Frame)
 - Choose option 3: "Single frame analysis"
 - The application will capture one frame and analyze it
-- Output shows: `Blue LED detected: YES/NO` (or other colors)
+- Output shows: `Green LED detected: YES/NO` 
 
 #### Diode Functionality Test
 To confirm a diode is working properly:
@@ -37,7 +37,7 @@ To confirm a diode is working properly:
 - Calculates blinking frequency and pattern changes
 
 ### Expected LED Color
-**TODO: Add expected diode color from esp32s3mini-test/CLAUDE.md**
+- expected green LED color is 0, 255, 0
 
 ### Debug Information
 - All debug files are saved to `tmp/` directory:
@@ -48,3 +48,5 @@ To confirm a diode is working properly:
 - API key is automatically loaded from `api_key.txt`
 - Fallback to environment variable `ANTHROPIC_API_KEY`
 - Uses Claude Sonnet 4 model for analysis
+
+Always use virtualn environment to run python part of video led test the application.

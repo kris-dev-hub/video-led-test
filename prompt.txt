@@ -1,0 +1,22 @@
+Delete esp32smini-test/app directory and start this prompt. Put the board in front of the camera. Claude code should build the board app, upload it and verify on the camera if LED is really green.
+
+prompt:
+led_analyzer.py is a camera project that tests if the camera sees a blinking lead.
+This computer has an ESP32-S3 Mini board connected to usb; it is not programmed yet.
+Your job is to read esp32smini-test/CLAUDE.md and build an application based on this information.
+Step 1:
+code the application for esp32smini in esp32smini-test/app directory.
+Step 2:
+Upload the application to esp32smini board.
+Step 3:
+Verify that the application is working properly on the board. That it was compiled, uploaded correctly and started.
+repeat step 2 and 3, until the application is working properly.
+Step 4:
+Use led_analyzer.py to capture three single frames. Only if you are sure that application on the board is working properly.
+Step 5:
+Use led_analyzer.py to analyze three single frames and check if the LED is really green. Only if you are sure that application on the board is working properly.
+If it fails, get back to Step 1 and fix the code.
+Step 6:
+Finish the job and inform me about the result.
+
+Don't get sourcecode from outside this project directory.

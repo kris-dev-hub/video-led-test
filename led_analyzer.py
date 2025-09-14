@@ -119,8 +119,8 @@ Please format your response as JSON ONLY with the following structure (no markdo
                 with open(debug_txt_filename, 'w') as f:
                     f.write('\n'.join(debug_info))
 
-            # Check for blue LEDs and provide simple output
-            has_blue_led = False
+            # Check for green LEDs and provide simple output
+            has_green_led = False
             try:
                 # Clean the response - remove markdown formatting if present
                 clean_result = response.strip()
@@ -132,13 +132,13 @@ Please format your response as JSON ONLY with the following structure (no markdo
 
                 led_data = json.loads(clean_result)
                 for led in led_data.get('leds_detected', []):
-                    if 'blue' in led.get('color', '').lower() and led.get('status', '').lower() == 'on':
-                        has_blue_led = True
+                    if 'green' in led.get('color', '').lower() and led.get('status', '').lower() == 'on':
+                        has_green_led = True
                         break
             except:
                 pass
 
-            print(f"Blue LED detected: {'YES' if has_blue_led else 'NO'}")
+            print(f"Green LED detected: {'YES' if has_green_led else 'NO'}")
 
             return response
 
